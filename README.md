@@ -27,11 +27,13 @@ firstboot answers file. The only way I can get this to work is to split into two
 How to run
 ==========
 1. Run the following command:
-   docker run -ti --name docker-esm -h docker-esm -p 8443:8443 mitchese/private:esm691 bash
+   docker run -ti --name docker-esm -h docker-esm -p 8443:8443 mitchese/private:esm691
 2. In the command line, start all arcsight services:
    /etc/init.d/arcsight_services start
 
-This will take a few minutes to startup (requires >4G of ram).
+This will take a few minutes to startup (requires >4G of ram). After it is running, you can
+connect to https://docker-esm:8443/ with "admin" and "Happy123". All passwords in the container
+are set to my test password, Happy123. 
 
 How to connect connectors
 =========================
@@ -39,4 +41,5 @@ How to connect connectors
 For testing connector containers, you can provide a link in docker. Example
 
 docker run --link docker-esm:docker-esm -ti mitchese/private:connector bash
+
 

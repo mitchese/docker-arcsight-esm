@@ -6,4 +6,10 @@ RUN /opt/arcsight/manager/bin/setup_services.sh
 
 RUN rm /tmp/installer_responses.txt /tmp/arcsight.lic /tmp/firstboot_responses.txt /tmp/ArcSightESMSuite.bin
 
-ENTRYPOINT /bin/bash
+EXPOSE 8443/tcp
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+
