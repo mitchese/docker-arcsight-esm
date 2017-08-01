@@ -1,0 +1,128 @@
+#
+# Arcsight's Silent Properties File
+#
+# Please edit this file to set the desired values 
+#
+# Automatically generated on Mon Jul 31 16:01:35 UTC 2017
+#
+
+# =========================================================
+# Panel 'language_options'
+# =========================================================
+
+
+# 
+language_options=0
+
+# =========================================================
+# Panel 'language_list_options'
+# =========================================================
+#   Choose the language for the default system resources.
+#
+# =========================================================
+# Panel 'dbUserPswd'
+# =========================================================
+#   Provide a password for the arcsight database user.
+#
+# CORR-Engine password
+dbUserPswd.DB_PASSWORD=Happy123
+
+# Password confirmation
+dbUserPswd.DB_PASSWORD_CONFIRM=Happy123
+
+# =========================================================
+# Panel 'PC_EMAIL_CONFIG'
+# =========================================================
+#   Provide email addresses for notifications about system administration issues for all ESM v6.9.1c components.
+#
+# Error Notification Recipient
+PC_EMAIL_CONFIG.pc_notify_email=docker-esm@muzik.ca
+
+# From email address
+PC_EMAIL_CONFIG.senderaddress=docker-esm@muzik.ca
+
+# =========================================================
+# Panel 'manager_license'
+# =========================================================
+#   ESM v6.9.1c requires a valid license file. If you do not have a valid license, please contact HP Software Support Online to obtain one.
+#
+# License file
+manager_license.filename=/tmp/arcsight.lic
+
+# =========================================================
+# Panel 'manager_mode_config'
+# =========================================================
+#   DO NOT PUT ANYTHING HERE. The text will be generated using strings from fbwizard_strings.properties, see FBManagerPanelProcessor.java for more info.
+#
+# Please select one of the following options :
+#
+#   0 - Run product in default mode(defaultMode)
+#   1 - Run product in FIPS mode(fipsMode)
+# 
+manager_mode_config=0
+
+# =========================================================
+# Panel 'manager_fips_suiteB_options'
+# =========================================================
+#   DO NOT PUT ANYTHING HERE. The text will be generated using strings from fbwizard_strings.properties, see FBManagerPanelProcessor.java for more info.
+#
+# Please select one of the following options :
+#
+#   0 - FIPS 140-2(fipsDefault)
+#   1 - FIPS with Suite B 128 bits(fipsSuiteB128Mode)
+#   2 - FIPS with Suite B 192 bits(fipsSuiteB192Mode)
+# 
+manager_fips_suiteB_options=<REPLACE WITH THE DESIRED KEY OR OPTION NUMBER>
+
+# =========================================================
+# Panel 'manager_admin_user'
+# =========================================================
+#   Provide ArcSight Manager host name (recommended) or IP address, 
+#   and Administrator login credentials. <br><br> If you choose to provide a host name here, make sure it can be resolved through your Domain Name System (DNS) server.
+#
+# Manager host name (or IP)
+manager_admin_user.hostname=docker-esm
+
+# Administrator user name
+manager_admin_user.adminuser=admin
+
+# Administrator password
+manager_admin_user.adminpswd=Happy123
+
+# Password confirmation
+manager_admin_user.adminpswd2=Happy123
+
+# =========================================================
+# Panel 'logger_storage'
+# =========================================================
+#   DO NOT PUT ANYTHING HERE. The text will be generated using strings from fbwizard_strings.properties.
+#
+# Maximum Storage Age (Days)
+#  -- Optional Parameter , Remove # sign if the default value needs to be changed -- 
+logger_storage.max_time_days=30
+
+# =========================================================
+# Panel 'data_storage_info'
+# =========================================================
+#   Please specify how much space to allocate for the following.
+#
+# System Storage Size (GB)
+data_storage_info.mysql_size=6
+
+# Event Storage Size (GB)
+data_storage_info.event_storage_size=27
+
+# Online Event Archive Size (GB)
+data_storage_info.event_archive_size=8
+
+# Retention Period (Days)
+#  -- Optional Parameter , Remove # sign if the default value needs to be changed -- 
+data_storage_info.max_time_days=30
+
+# =========================================================
+# Panel 'foundation_packages_selection'
+# =========================================================
+
+
+# 
+foundation_packages_selection=

@@ -1,0 +1,18 @@
+# Mon Jul 31 14:24:39 UTC 2017
+# Replay feature output
+# ---------------------
+# This file was built by the Replay feature of InstallAnywhere.
+# It contains variables that were set by Panels, Consoles or Custom Code.
+
+
+
+#Choose Link Location
+#--------------------
+USER_SHORTCUTS=Do Not Install
+
+#Install
+#-------
+-fileOverwrite_/opt/arcsight/suite/bin/scripts/suite_upgrade.sh=Yes
+-fileOverwrite_/opt/arcsight/suite/UninstallerData/Uninstall_ArcSight_ESM_Suite_6.9.1.lax=Yes
+-fileOverwrite_/opt/arcsight/suite/copyright.txt=Yes
+-fileOverwrite_/opt/arcsight/suite/version.txt=Yes
