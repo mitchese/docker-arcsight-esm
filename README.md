@@ -28,8 +28,6 @@ How to run
 ==========
 1. Run the following command:
    docker run -ti --name docker-esm -h docker-esm -p 8443:8443 mitchese/private:esm691
-2. In the command line, start all arcsight services:
-   /etc/init.d/arcsight_services start
 
 This will take a few minutes to startup (requires >4G of ram). After it is running, you can
 connect to https://docker-esm:8443/ with "admin" and "Happy123". All passwords in the container
