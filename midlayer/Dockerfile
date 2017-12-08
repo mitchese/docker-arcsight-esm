@@ -1,5 +1,5 @@
 FROM centos:centos7
-MAINTAINER sean.mitchell@cspi.com
+MAINTAINER sean@srm.im
 
 COPY 90-nproc.conf /etc/security/limits.d/90-nproc.conf
 COPY redhat-release /etc/redhat-release
